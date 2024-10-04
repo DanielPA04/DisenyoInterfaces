@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+main > section:first-of-type > article {
+    color: blue;
+}
+
+
+a {
+    border: red solid;
+    border-radius: 10px;
+    padding: 8px 22px;
+    background-color: red;
+    color: white;
+    text-decoration: none;  
+    background-size: auto;
+}
+
+a::after{
+    content: url("../img/arrow.png");
+    margin-left: 10px;
+    vertical-align: middle;
+    
+
+}
+
