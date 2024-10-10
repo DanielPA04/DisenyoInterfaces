@@ -5,7 +5,7 @@ body {
     background-color: #F5F5F5;
 }
 
-.grid {
+.grid1 {
     display: grid;
     grid-template-columns: repeat(2, 800px);
     grid-template-rows: repeat(2, 600px);
