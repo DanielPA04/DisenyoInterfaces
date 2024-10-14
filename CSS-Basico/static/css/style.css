@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
+:root {
     font-family: 'Noto Sans', sans-serif;
     background-color: #F5F5F5;
 }
+
+section > p {
+ margin-left: 13%;
+}
+
+section > h2 {
+    margin-left: 13%;
+   }
+
 
 .grid1 {
     display: grid;
@@ -12,6 +21,20 @@ body {
     gap: 10px;
     justify-items: center;
     justify-content: center;
+
+    .item-post {
+        text-align: justify;
+        margin-top: 100px;
+        position: relative;
+        top: 30%;
+        background-color: white;
+        border-radius: 10px;
+        width: 80%;
+        left: 8%;
+        padding: 10px;
+        padding-bottom: 20px;
+        
+    }
 
   }
 
@@ -38,24 +61,11 @@ a {
     border-radius: 10px;
     padding: 8px 22px;
     background-color: red;
-    color: white;
     text-decoration: none;  
     background-size: auto;
 }
 
-.item-post {
-    text-align: justify;
-    margin-top: 100px;
-    position: relative;
-    top: 30%;
-    background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    left: 8%;
-    padding: 10px;
-    padding-bottom: 20px;
-    
-}
+
 
 .item-post > p:first-of-type {
     margin-left: 0%;
@@ -72,4 +82,178 @@ a::after{
     width: 20px;
     background-size: cover;
     background-position: center;
+}
+
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    grid-template-rows: repeat(1, 600px);
+    gap: 10px;
+    justify-items: center;
+    justify-content: center;
+
+
+    
+    form {
+        background-color: #e4e0e0;
+    }
+
+    input {
+        width: 80%;
+        height: 20px;
+        margin: 10px;
+        background-color: #e4e0e0;
+        border: 1px solid #b8b4b4;
+
+       
+        
+
+    }
+
+    input::placeholder{
+        color: black;
+        opacity: 1;
+        font-family: 'Noto Sans', sans-serif;
+
+    } 
+
+
+    textarea{
+        width: 80%;
+        height: 250px;
+        margin: 10px;
+        background-color: #e4e0e0;
+        border: 1px solid #b8b4b4;
+
+    }
+
+    textarea::placeholder{
+        color: black;
+        opacity: 1;
+        font-family: 'Noto Sans', sans-serif;
+
+    }
+
+   article >h3:first-of-type{
+    margin-left:40px ;
+   }
+
+   article > p:first-of-type{
+    margin-left:40px ;
+   }
+
+  }
+
+
+  #submit {
+    background-color: red;
+    color: white;
+    border: none;
+  }
+
+  #submit::before {
+    background: url("../img/avionPapel.png");
+    content: "";
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  ul  {
+    list-style:none  
+}
+
+
+
+.grid2 > article > ul > li:nth-child(1) > p:nth-child(2)::before {
+    background: url("../img/telef.png");
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.grid2 > article > ul > li:nth-child(2) > p:nth-child(2)::before {
+    background: url("../img/sobre.jpg");
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid2 > article > ul > li:nth-child(3) > p:nth-child(2)::before {
+    background: url("../img/marker.png");
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.grid2 > article > ul > li:nth-child(4) > p:nth-child(2)::before {
+    background: url("../img/icone-skype-rouge.png");
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #e4e0e0;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    text-align: center;
+   
+ 
+
+}
+
+#footer-p {
+    padding: 10px;
+}
+
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+input:focus{
+    background-color: white;
+}
+
+textarea:focus{
+    background-color: white;
+}
+
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: purple;
+}
+
+p::selection {
+    color: red;
+    background-color: yellow;
 }
