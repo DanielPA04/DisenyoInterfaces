@@ -13,9 +13,32 @@ h1{
     display: none;
 }
 
-section > p {
-  margin-left: 13%;
+
+
+h2::before {
+  background: url("../img/circuloRojo.png");
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  position: relative;
+  left: 15px;
+  bottom: 2px;
+  
 }
+
+
+
+section > p {
+  margin-left: 14%;
+  color: grey;
+}
+
+
 
 section > h2 {
   margin-left: 13%;
@@ -29,14 +52,27 @@ main > section:nth-child(2) {
   display: flex;
   margin-left: 13%;
   width: 79%;
-  height: 900px;
+  height: 1200px;
   flex-wrap: wrap;
   gap: 10px;
   align-content: space-around;
 
+
+  article div p:first-child {
+    color: grey;
+    height: 25px;
+    border-left: red 3px solid;
+    position: relative;
+    margin: 0;
+    right: 10px;
+    top: 19px;
+    font-size: 14px;
+    padding-left: 8px;
+  }
+
   .item-post {
     text-align: justify;
-    margin-top: 100px;
+    margin-top: 215px;
     position: relative;
     top: 30%;
     background-color: white;
@@ -87,11 +123,13 @@ a::after {
 
   input {
     width: 80%;
-    height: 20px;
+    height: 30px;
     margin: 10px;
     margin-left: 50px;
     background-color: #e4e0e0;
     border: 1px solid #b8b4b4;
+    border-radius: 4px;
+
   }
 
   input:first-of-type{
@@ -109,6 +147,7 @@ a::after {
     height: 250px;
     margin: 10px;
     margin-left: 50px;
+    border-radius: 4px;
     background-color: #e4e0e0;
     border: 1px solid #b8b4b4;
   }
@@ -123,6 +162,7 @@ a::after {
     margin-left: 40px;
   }
 
+  /* stylelint-disable-next-line no-descending-specificity */
   article > p:first-of-type {
     margin-left: 40px;
   }
@@ -155,6 +195,7 @@ a::after {
     width: 20px;
     background-size: cover;
     background-position: center;
+    margin-right: 10px;
 }
 
 
@@ -176,8 +217,8 @@ main > section:first-of-type > div > article {
 
 #submit {
   background-color: red;
-  width: 80%;
-  height: 20px;
+  width: 30%;
+  height: 35px;
   margin: 10px;
   margin-left: 50px;
   color: white;
@@ -194,6 +235,7 @@ main > section:first-of-type > div > article {
   width: 16px;
   background-size: cover;
   background-position: center;
+  margin-right: 5px;
 }
 
 ul {
@@ -203,7 +245,8 @@ ul {
 
 footer {
   background-color: #e4e0e0;
-    text-align: center;
+  text-align: center;
+  margin-top: 50px;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
@@ -212,11 +255,7 @@ footer > p {
   margin: 0;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
-.item-post > p:first-of-type {
-    margin-left: 0%;
-    border-left: red 3px solid;
-  }
+
 
 a:hover {
   color: black;
